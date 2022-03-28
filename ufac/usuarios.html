@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cadastro Usuários</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+            <span>SGCM</span>
+        </div>
+        <div id="usuarioinfo">
+            <span>Usuário: Adiministrador (adim)</span>
+            <span>Papel: ADMIN</span>
+            <button type="button">Logout</button>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="agenda.html" target="_blank">Agenda</a></li>
+            <li><a href="atendimento.html" target="_blank">Atendimento</a></li>
+            <li><a href="paciente.html" target="_blank">Paciente</a></li>
+            <li><a href="profissionais.html" target="_blank">Profissionais</a></li>
+            <li><a href="convenios.html" target="_blank">Convenios</a></li>
+            <li><a href="unidades.html" target="_blank">Unidades</a></li>
+            <li><a href="especialidades.html" target="_blank">Especialidades</a></li>
+            <li><a href="usuários.html" target="_blank">Usuários</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>ERRO!</div>
+        <div>SUCESSO!</div>
+        <form action="#" method="get">
+            <label for="nome">Nome Completo: </label>
+            <input type="text" name="Nome" id="nome" required><br>
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" id="usuario" required><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required><br>
+            <label for="ativo">Ativo</label>
+            <input type="checkbox" name="ativo" id="ativo"><br>
+            <label for="Papel">Papel:</label>
+            <select name="Papel" id="Papel" required><br
+                <option value="">Selecione uma opção</option>
+                <option value="admin">Administrador de sistema</option>
+                <option value="usuer">Usuário do sitema</option>
+            </select><br>
+            <input type="submit" value="enviar">
+            <input type="hidden" name="id">
+        </form>
+        <br>
+        <br>
+        <div id="comandos">
+            <button type="button">Novo Usuário</button>
+            <label for="pesquisa">Pesquisa:</label>
+            <input type="text" name="pesquisa" id="pesquisa">
+        </div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Usuário</th>
+                    <th>Ativo</th>
+                    <th>Papel</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Administrador</td>
+                    <td>admin</td>
+                    <td>Sim</td>
+                    <td>ADMIN</td>
+                    <td>
+                        <span><button type="button">Editar</button></span>
+                        <span><button type="button">Excluir</button></span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Usuário 1</td>
+                    <td>user1</td>
+                    <td>Sim</td>
+                    <td>usuário</td>
+                    <td>
+                        <span><button type="button">Editar</button></span>
+                        <span><button type="button">Excluir</button></span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Usuario 2</td>
+                    <td>user2</td>
+                    <td>Não</td>
+                    <td>usuário</td>
+                    <td>
+                        <span><button type="button">Editar</button></span>
+                        <span><button type="button">Excluir</button></span>
+
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Total de registro: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <span>
+            SDCM - Sistema de Gerenciamento de Clínica Médica
+        </span>
+        <span>Suporte técnico: (68) 55555-5555 | E-mail: <a href="mailto:suporte.sgcm@ufac.br">suporte.sgcm@ufac.br</a>
+        </span>
+    </footer>
+</body>
+
+</html>
