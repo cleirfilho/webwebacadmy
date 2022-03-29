@@ -1,25 +1,119 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    display:flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
 }
-/* Header */
+/* Header e footer */
+header,
+footer {
+  color: #fff;
+  padding: 0.5rem;
+}
 header {
-    background-image: linear-gradient(#220de4, #65a5f8);
+  background-image: linear-gradient(#220de4, #65a5f8);
+  display: flex;
+  justify-content: space-between;
 }
-/* fim header */
+div#logo {
+  margin: auto 0;
+}
+div#logo * {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+div#usuarioinfo *,
+footer span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-image: linear-gradient(#220de4, #65a5f8);
+  margin-top: auto;
+}
+
+/* fim header e footer */
 
 /* main */
 main {
-    background-image: linear-gradient(#ececec, #fff);
+  background-image: linear-gradient(#ececec, #fff);
+  padding: 1rem;
 }
-/* fim main */
+/* alerta */
+div.alerta {
+  display: block;
+  border: 1px solid;
+  padding: 1rem;
+  max-width: 400px;
+  margin: 1rem auto;
+  word-wrap: break-word;
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  left : 0;
+  box-shadow: 0px 2px 4px 0px black;
+  border-radius: 10px;
+}
+div.alerta span {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
-/* footer */
-footer {
-    background-image: linear-gradient(#220de4, #65a5f8);
-    margin-top : auto;
+div.alerta.erro {
+    background-color: #f08080;
+    color:#630d0d;
+    border-color: #5e0202;
 }
-/* fim footer */
+div.alerta.sucesso {
+
+    background-color: #00ff15;
+    color: green; 
+    border-color: green;
+}
+/* fim alerta */
+/* table */
+table {
+  border-spacing: 0.1rem;
+  margin: 0.5rem auto;
+  width: 100%;
+}
+table th {
+  background-color: #003366;
+  color: #fff;
+}
+table th,
+table td {
+  padding: 0.5rem;
+}
+table tfoot td {
+  text-align: center;
+  border-top: 1px solid #003366;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: antiquewhite;
+}
+table tbody tr:nth-child(even) {
+  background-color: aliceblue;
+}
+table tbody tr:hover {
+  background-color: #cccc;
+}
+div#comandos {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.1rem 0.5rem;
+  border-bottom: 1px solid #003366;
+}
+table tbody td:last-child {
+  text-align: center;
+  width: 1%;
+  white-space: nowrap;
+}
+/* fim table */
+/* fim main */
