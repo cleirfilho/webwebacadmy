@@ -10,7 +10,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
     <!-- <script src='main.js'></script> -->
 </head>
-
 <body>
     <header id="header">
         <div id="logo">
@@ -41,7 +40,7 @@
         </ul>
     </nav>
     <main>
-        <!-- <div class="alerta erro">
+        <div class="alerta erro">
             <span>&times;</span>
             ERRO!
 
@@ -49,7 +48,12 @@
         <div class="alerta sucesso">
             <span>&times;</span>
             SUCESSO!
-        </div> -->
+        </div>
+        <div class="alerta sucesso" id="carregando" style="display:none">
+            <span>&times;</span>
+           Carregando
+        </div>
+       
         <div class="grid">
             <form action="#" method="get">
                 <label for="nome">Nome Completo </label>
@@ -75,6 +79,7 @@
             <br>
             <div id="comandos">
                 <button type="button">Novo Usuário</button>
+                <button type="button" id="carregar_dados">Carregar dados</button>
                 <div>
                     <label for="pesquisa">Pesquisa:</label>
                     <input type="text" name="pesquisa" id="pesquisa">
@@ -143,6 +148,8 @@
         <span>Suporte técnico: (68) 55555-5555 | E-mail: <a href="mailto:suporte.sgcm@ufac.br">suporte.sgcm@ufac.br</a>
         </span>
     </footer>
+    <script src="script.js"></script>
+   
 </body>
 
 </html>
